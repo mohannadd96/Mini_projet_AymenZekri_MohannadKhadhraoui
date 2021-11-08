@@ -3,4 +3,7 @@
     <string name="enter_email">Enter email</string>
     <string name="enter_password">Enter password</string>
     <string name="enter_name">Enter name</string>
+    <string name="enter_date">Enter date</string>
+    <string name="how_many_people">How many people?</string>
+    <string name="submit">Submit</string>
 </resources>

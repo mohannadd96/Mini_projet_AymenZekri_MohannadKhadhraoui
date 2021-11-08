@@ -1,6 +1,7 @@
 package com.example.resto;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,13 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         UserEntity data = userEntity.get(position);
         database = database.getUserDatabase(context);
         holder.textView.setText(data.getName());
+        Integer id = data.getId();
+        holder.btreserve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context,Reservation.class).putExtra("id",id));
+            }
+        });
 
     }
 
