@@ -12,6 +12,6 @@ public interface ReservationDao {
     @Insert
     void registerReservation(ReservationEntity reservationEntity);
 
-    @Query("SELECT * FROM reservations")
-    List<ReservationEntity> getAll();
+    @Query("SELECT * FROM reservations WHERE restoId LIKE :resii")
+    List<ReservationEntity> getAll(Integer resii);
 }

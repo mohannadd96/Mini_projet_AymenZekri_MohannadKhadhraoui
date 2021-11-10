@@ -45,9 +45,9 @@ public class Login extends AppCompatActivity {
                                });
                            } else {
 
-                               String name = userEntity.name;
+                               Integer id = userEntity.id;
                                startActivity(new Intent(Login.this,HomeScreen.class)
-                               .putExtra("name",name));
+                               .putExtra("id",id));
                            }
                        }
                    }).start();

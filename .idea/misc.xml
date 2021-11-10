@@ -6,13 +6,18 @@
         <entry key="..\:/Users/Mohannad/AndroidStudioProjects/Resto/app/src/main/res/layout/activity_home_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohannad/AndroidStudioProjects/Resto/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohannad/AndroidStudioProjects/Resto/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_home_screen.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_reservation.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_user_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohannad/Desktop/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/list_row_main.xml" value="0.22" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_add_menu.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_consulter_menu.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_consulter_reservation.xml" value="0.1" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_home_screen.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_image_recycler.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_recycler_view.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_register.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_reservation.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/activity_user_home.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/img_row.xml" value="0.23233695652173914" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/list_row_main.xml" value="0.2427536231884058" />
+        <entry key="..\:/Users/jordi/Documents/GitHub/Mini_projet_AymenZekri_MohannadKhadhraoui/app/src/main/res/layout/list_row_reservation.xml" value="0.2427536231884058" />
       </map>
     </option>
   </component>
