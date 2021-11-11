@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.resto">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +19,17 @@
             android:name=".UserHome"
             android:exported="true" />
         <activity
+            android:name=".ImageRecycler"
+            android:exported="true" />
+
+        <activity
             android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".AddMenu"
+            android:exported="true" />
+        <activity
+            android:name=".Consult"
             android:exported="true" />
         <activity
             android:name=".HomeScreen"
