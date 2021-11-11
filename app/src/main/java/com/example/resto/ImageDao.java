@@ -1,6 +1,7 @@
 package com.example.resto;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
@@ -12,6 +13,12 @@ public interface ImageDao {
     void insert(Images... image);
 
 
-    @Query("SELECT * FROM Images")
-    List<Images> getAllImage();
+
+    @Query("SELECT * FROM Images WHERE idress LIKE :aza")
+    List<Images> getAllImage(Integer aza);
+
+    @Delete
+    void supp(Images...image);
+
+
 }

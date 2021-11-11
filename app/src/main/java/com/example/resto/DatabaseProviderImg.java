@@ -7,7 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
-@Database(entities={Images.class},version = 1)
+@Database(entities={Images.class},version = 2)
 
 @TypeConverters({ImageBitmapString.class}) // This will convert Bitmap to String and vice-versa;
 public abstract class DatabaseProviderImg extends RoomDatabase

@@ -1,5 +1,6 @@
 package com.example.resto;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +22,8 @@ public class ImageRecycler extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.rr);
 
-
-        List<Images> images = DatabaseProviderImg.getDbConnection(getApplicationContext()).imageDao().getAllImage();
+        Integer id = getIntent().getIntExtra("idd",0);
+        List<Images> images = DatabaseProviderImg.getDbConnection(getApplicationContext()).imageDao().getAllImage(id);
         ImageAdapter adapter = new ImageAdapter(getApplicationContext(), images);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
@@ -32,4 +33,9 @@ public class ImageRecycler extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
     }
+/*
+    public void refrechh(){
+        Integer id = getIntent().getIntExtra("idd",0);
+        startActivity(new Intent(ImageRecycler.this, ImageRecycler.class));
+    }*/
 }

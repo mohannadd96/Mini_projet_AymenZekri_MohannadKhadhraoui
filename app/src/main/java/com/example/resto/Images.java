@@ -10,6 +10,16 @@ public class Images {
         @PrimaryKey(autoGenerate = true)
         @ColumnInfo(name = "image sid")
         private int id;
+        private Integer idress;
+
+        public Integer getIdress() {
+                return idress;
+        }
+
+        public void setIdress(Integer idress) {
+                this.idress = idress;
+        }
+
         public byte[] getImages() { return images; }
 
         public void setImages(byte[] images) { this. images = images; }

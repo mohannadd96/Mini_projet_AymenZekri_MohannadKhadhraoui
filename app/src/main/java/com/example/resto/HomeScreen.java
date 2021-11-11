@@ -30,7 +30,7 @@ public class HomeScreen extends AppCompatActivity {
         addMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeScreen.this,AddMenu.class));
+                startActivity(new Intent(HomeScreen.this,AddMenu.class).putExtra("idd",id));
             }
         });
         consult.setOnClickListener(new View.OnClickListener() {

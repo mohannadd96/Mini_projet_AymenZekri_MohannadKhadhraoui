@@ -34,7 +34,10 @@ public class AddMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_menu);
-        imageView = findViewById(R.id.image);
+        imageView = findViewById(R.id.imageView2);
+        //Integer id = getIntent().getIntExtra("idd",0);
+
+
 
     }
 
@@ -43,8 +46,10 @@ public class AddMenu extends AppCompatActivity {
     public void save(View view) {
         Images image = new Images();
         Log.d(  "message",  "data="+bitmap);
+        Integer id = getIntent().getIntExtra("idd",0);
 // Log.d("message", "data="+ImageBitmapString.getStringFromBitmap(bitmap)) ;
         image. setImages (ImageBitmapString.getStringFromBitmap(bitmap)) ;
+        image.setIdress(id);
         DatabaseProviderImg.getDbConnection(getApplicationContext()).imageDao(). insert (image) ;
         Toast.makeText(getApplicationContext(),"Image Saved!", Toast.LENGTH_SHORT).show();
 
@@ -52,7 +57,8 @@ public class AddMenu extends AppCompatActivity {
     }
 
     public void get(View view) {
-        startActivity(new Intent(AddMenu.this, ImageRecycler.class));
+        Integer id = getIntent().getIntExtra("idd",0);
+        startActivity(new Intent(AddMenu.this, ImageRecycler.class).putExtra("idd",id));
     }
 
     private void loadImagesFromGallery() {
@@ -73,12 +79,12 @@ public class AddMenu extends AppCompatActivity {
                 Uri selectedImageUri = data.getData();
                 if (null != selectedImageUri) {
                 // update the preview image in the Layout
-                    // imageView.setImageURI(selectedImageUri.getEncodedPath()) ;
+                    imageView.setImageURI(selectedImageUri) ;
                 // Let's read picked image path using content resolver
                     try {
                         bitmap =
                                 MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImageUri) ;
-                       // imageView.setImageBitmap(bitmap) ;
+                        imageView.setImageBitmap(bitmap) ;
                     } catch (IOException e) {
                         e.printStackTrace();
                     }}}}}

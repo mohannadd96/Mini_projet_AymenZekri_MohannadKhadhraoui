@@ -1,10 +1,12 @@
 package com.example.resto;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -38,6 +40,16 @@ public class ImageAdapter extends RecyclerView. Adapter<ImageAdapter.MyViewHolde
         Images images = (Images) arrayList.get(position);
         holder.imageView.setImageBitmap(ImageBitmapString.getBitMapFromStr(images.getImages()));
         images.setImages (images.getImages());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseProviderImg.getDbConnection(context.getApplicationContext()).imageDao().supp(images);
+               // ((ImageRecycler)context).refrechh();
+                Toast.makeText(context.getApplicationContext(),"Image Deleted!", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
     }
 
         @Override
@@ -45,10 +57,14 @@ public class ImageAdapter extends RecyclerView. Adapter<ImageAdapter.MyViewHolde
 
         static class MyViewHolder extends RecyclerView.ViewHolder {
             ImageView imageView;
+            ImageView delete;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
                 imageView = itemView.findViewById(R.id.immm);
+                delete = itemView.findViewById(R.id.delete);
+
+
 
             }
 

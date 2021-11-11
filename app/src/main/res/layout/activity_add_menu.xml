@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
-        android:text="Save"
+        android:text="Add Menu"
         android:id="@+id/save"
         android:onClick="save"
         />
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
-        android:text="fetch"
+        android:text="Browse and Delete Menu"
         android:id="@+id/fetch"
         android:onClick="get"
         />
