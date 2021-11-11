@@ -17,7 +17,8 @@
             android:id="@+id/reserveimg"
             android:layout_width="343dp"
             android:layout_height="356dp"
-            android:layout_marginStart="20dp" />
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_launcher_background"/>
 
 
     </LinearLayout>

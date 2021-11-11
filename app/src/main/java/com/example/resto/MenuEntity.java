@@ -14,6 +14,8 @@ public class MenuEntity {
 
     @ColumnInfo(name = "image")
     String image;
+
+
     
 
     public Integer getResId() {

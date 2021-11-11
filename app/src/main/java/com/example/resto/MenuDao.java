@@ -4,6 +4,9 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import com.example.resto.MenuEntity;
+import com.example.resto.UserEntity;
+
 import java.util.List;
 @Dao
 public interface MenuDao {
